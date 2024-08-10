@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #dbdbdb;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .barra-busqueda input {
+            padding: 8px;
+            border-radius: 3px;
+            border: 1px solid #dbdbdb;
+            background-color: #efefef;
+            width: 215px;
+            font-size: 14px;
+        }
+        .iconos-nav p {
+            margin: 0 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .iconos-nav p:hover {
+            color: #8e8e8e;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 80px 20px 20px; 
+            align-items: center;
+        }
+        .muro {
+            width: 100%;
+            max-width: 600px;
+        }
+        .publicacion {
+            background: white;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .publicacion p {
+            margin: 0;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .publicacion .imagen {
+            width: 100%;
+            height: 300px; 
+            background-color: #efefef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #999;
+        }
+        .publicacion .descripcion {
+            padding: 10px;
+            font-size: 14px;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #ffffff;
+            border-top: 1px solid #dbdbdb;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            box-shadow: 0 -1px 5px rgba(0,0,0,0.1);
+            
+        }
+        footer p {
+            margin: 0;
+            color: #262626;
+            font-size: 14px;
+            text-align: center;
+            
+        }
+        footer p:hover {
+            color: #8e8e8e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p><strong>Instagram</strong></p>
+        <form class="barra-busqueda">
+            <input type="text" placeholder="Buscar">
+        </form>
+        <section class="iconos-nav">
+            <p>Notificaciones</p>
+            <p>Mensajes</p>
+            <p>Perfil</p>
+        </section>
+    </header>
+    <main>
+        <section class="muro">
+            <article class="publicacion">
+                <p>@nicol-757</p>
+                <section class="imagen">
+                    Imagen de la publicación
+                </section>
+                <section class="descripcion">
+                    <p>Descripción de la publicación de Nicol</p>
+                </section>
+            </article>
+            <article class="publicacion">
+                <p>@seleccioncolombiafc</p>
+                <section class="imagen">
+                    Imagen de la publicación
+                </section>
+                <section class="descripcion">
+                    <p>Descripción de la publicación de Selección Colombia FC</p>
+                </section>
+            </article>
+            <article class="publicacion">
+                <p>@harold_ghti</p>
+                <section class="imagen">
+                    Imagen de la publicación
+                </section>
+                <section class="descripcion">
+                    <p>Descripción de la publicación de Harold</p>
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Inicio</p>
+        <p>Buscar</p>
+        <p>Crear publicación</p>
+        <p>Actividad</p>
+        <p>Perfil</p>
+    </footer>
+</body>
+</html>
