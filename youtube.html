@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="shortcut icon" href="img/iconoyoutube.png" type="image/x-icon">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            background-color: #f4f4f4;
+        }
+        header{
+            background-color: #f1f1f1;
+            padding: 15px 2px ;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            z-index: 10;
+        }
+        .search-form{
+            flex-grow: 1;
+            margin: 10px;
+            display: flex;
+            margin-left: 70px;
+            margin-right: 100px;
+        }
+        .search-form input{
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            border-radius: 100px;
+        }
+        .search-form button{
+            padding: 8px 12px;
+            background-color: #d32f2f;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-left: 30px;
+        }
+        .youtube{
+            color: black;
+            padding: 5px;
+        }
+        nav{
+            width: 220px;
+            background-color: #ffffff;
+            padding-top: 80px;
+            position: fixed;
+            height: 100vh;
+            box-shadow: 2px 0 5px gray;
+            display: flex;
+            flex-direction: column;
+        }
+        nav ul{
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li{
+            padding: 11px 30px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            border-bottom: 1px solid #eee;
+        }
+        nav ul li:hover{
+            
+            background-color: #f9f9f9;
+        }
+        .footer{
+            background-color: #fafafa;
+            padding: 15px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+        }
+
+        .footer h2{
+            font-size: 14px;
+        }
+        .footer p{
+            color: #777;
+        }
+        main{
+            margin-left: 220px;
+            padding: 10px 30px;
+            background-color: rgb(235, 231, 231);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+        }
+        article{
+            background-color: #fff;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px black;
+            overflow: hidden;
+        }
+
+        article h3{
+            margin: 10px;
+            font-size: 16px;
+        }
+        article p{
+            margin: 10px;
+            color: #555;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p class="youtube">YouTube</p>
+        <form class="search-form">
+            <input type="text" placeholder="Buscar">
+            <button type="submit">Buscar</button>
+        </form>
+    </header>
+
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Explorar</li>
+            <li>Suscripciones</li>
+            <li>Biblioteca</li>
+            <li>Historial</li>
+            <li>Tendencias</li>
+            <li>Deportes</li>
+            <li>Música</li>
+            <li>En Vivo</li>
+            <li>Configuración</li>
+            <li>Ayuda</li>
+            <li>Acerca de</li>
+        </ul>
+    </nav>
+
+    <main>
+        <article> 
+            <h3>Programacion Orientada a Objetos</h3>
+            <p>Canal midu • 800k vistas • hace 6 años</p>
+        </article>
+        <article>
+            <h3>Arbol sin hojas - Dread Mar I</h3>
+            <p>Dread Mar I oficial • 5M vistas • hace 10 años</p>
+        </article>
+        <article>
+            <h3>Aprende Java</h3>
+            <p>Midu • 1M vistas • hace 6 meses</p>
+        </article>
+        <article>
+            <h3>Todo sobre CSS y html para principiantes</h3>
+            <p>Midu • 600k vistas • hace 1 mes</p>
+        </article>
+        <article>
+            <h3>Una loca como tu - Nanpa</h3>
+            <p>Nanpa Oficial • 5M vistas • hace 2 años</p>
+        </article>
+        <article>
+            <h3>Sin tí - King Changó</h3>
+            <p>KinChangó • 2M vistas • hace 8 años</p>
+        </article>
+        <article>
+            <h3>Morocha - MILOJ</h3>
+            <p>Miloj • 3M vistas • hace 3 años</p>
+        </article>
+        <article>
+            <h3>Si me pongo - Nanpa</h3>
+            <p>Nanpa • 1M vistas • hace 2 meses</p>
+        </article>
+        <article>
+            <h3>Labio Rotos - Zoe</h3>
+            <p>Zoe Oficial • 3M vistas • hace 8 años</p>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <h2>© 2024 MyTube Inc.</h2>
+        <p>Explora y descubre nuevos contenidos personalizados para ti.</p>
+    </footer>
+</body>
+</html>
